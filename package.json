@@ -2,7 +2,14 @@
   "name": "codemirror",
   "version": "5.40.3",
   "main": "lib/codemirror.js",
+  "module": "dist/codemirror-es.js",
   "style": "lib/codemirror.css",
+  "author": {
+    "name": "Marijn Haverbeke",
+    "email": "marijnh@gmail.com",
+    "url": "http://marijnhaverbeke.nl"
+  },
+  "contributors": ["Brett Zamir"],
   "description": "Full-featured in-browser code editor",
   "license": "MIT",
   "directories": {
@@ -15,13 +22,18 @@
     "test": "node ./test/run.js",
     "lint": "bin/lint"
   },
+  "dependencies": {},
+  "engines": {},
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
     "blint": "^1",
-    "node-static": "0.6.0",
+    "node-static": "0.7.11",
     "phantomjs-prebuilt": "^2.1.12",
-    "rollup": "^0.41.0",
-    "rollup-plugin-buble": "^0.15.0",
-    "rollup-watch": "^3.2.0"
+    "rollup": "^0.66.2",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-terser": "^3.0.0",
+    "rollup-watch": "^4.3.1"
   },
   "bugs": "http://github.com/codemirror/CodeMirror/issues",
   "keywords": [
@@ -30,13 +42,6 @@
     "Editor"
   ],
   "homepage": "https://codemirror.net",
-  "maintainers": [
-    {
-      "name": "Marijn Haverbeke",
-      "email": "marijnh@gmail.com",
-      "web": "http://marijnhaverbeke.nl"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/codemirror/CodeMirror.git"

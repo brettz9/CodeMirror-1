@@ -7,3 +7,7 @@
 .idea
 *.iml
 /lib/codemirror.js
+/lib/codemirror.js.map
+/lib/codemirror.min.js
+/lib/codemirror.min.js.map
+/dist
